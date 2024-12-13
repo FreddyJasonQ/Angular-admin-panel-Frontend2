@@ -1,0 +1,131 @@
+.customers-summary {
+  padding: 20px;
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  margin: 20px;
+}
+
+.customers-summary h2 {
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.summary-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.summary-stats .stat {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.summary-stats .stat img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.summary-stats .stat-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.summary-stats .stat-info span:nth-child(1) {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 5px;
+}
+
+.summary-stats .stat-info span:nth-child(2) {
+  font-size: 20px;
+  color: var(--black);
+  margin-bottom: 5px;
+}
+
+.summary-stats .stat-info span:nth-child(3) {
+  font-size: 16px;
+  color: var(--green);
+}
+
+.customers-container {
+  padding: 20px;
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  margin: 20px;
+}
+
+.customers-container h2 {
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.customers-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.customers-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customers-table th,
+.customers-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--black2);
+}
+
+.customers-table th {
+  background: var(--blue);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.customers-table .tag {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+  background: var(--pink);
+  color: var(--white);
+  font-size: 14px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+.pagination button:hover {
+  background: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.pagination span {
+  padding: 10px 20px;
+  font-size: 16px;
+}

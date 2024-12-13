@@ -1,0 +1,163 @@
+<div class="container">
+    <app-sidebar [class.active]="isSidebarActive"></app-sidebar>
+    <div class="main" [class.active]="isSidebarActive">
+        <div class="topbar">
+            <div class="toggle" (click)="toggleSidebar()">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <div class="search">
+                <label>
+                    <input type="text" placeholder="Search here">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+            <div class="user">
+                <img src="assets/customer01.jpg" alt="image">
+            </div>
+        </div>
+        <div class="customers-summary">
+            <h2>Customers Summary</h2>
+            <div class="summary-stats">
+                <div class="stat">
+                    <img src="assets/usa.svg" alt="USA Flag">
+                    <div class="stat-info">
+                        <span>2M</span>
+                        <span>United States</span>
+                        <span>+33% higher than last week</span>
+                    </div>
+                </div>
+                <div class="stat">
+                    <img src="assets/brasil.svg" alt="Brazil Flag">
+                    <div class="stat-info">
+                        <span>3M</span>
+                        <span>Brazil</span>
+                        <span>+28% higher than last week</span>
+                    </div>
+                </div>
+                <div class="stat">
+                    <img src="assets/india.svg" alt="India Flag">
+                    <div class="stat-info">
+                        <span>1M</span>
+                        <span>India</span>
+                        <span>+46% higher than last week</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="customers-container">
+            <h2>Customers</h2>
+            <div class="customers-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Country</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Status</th>
+                            <th>Tags</th>
+                            <th>Date Created</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Tiger Nixon</td>
+                            <td>United States</td>
+                            <td>company@Testing.com</td>
+                            <td>000-089-992-1</td>
+                            <td>Active</td>
+                            <td>
+                                <span class="tag">Wholesaler</span>
+                                <span class="tag">High Budget</span>
+                            </td>
+                            <td>2023/04/25</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Serge Baldwin</td>
+                            <td>Brasil</td>
+                            <td>company@Testing.com</td>
+                            <td>887-332-090-2</td>
+                            <td>Inactive</td>
+                            <td>
+                                <span class="tag">High Budget</span>
+                            </td>
+                            <td>2023/04/09</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Zenaida Frank</td>
+                            <td>India</td>
+                            <td>company@Testing.com</td>
+                            <td>222-333-222-0</td>
+                            <td>Inactive</td>
+                            <td>
+                                <span class="tag">Reseller</span>
+                                <span class="tag">Low Budget</span>
+                            </td>
+                            <td>2023/01/04</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Zorita Serrano</td>
+                            <td>Brasil</td>
+                            <td>company@Testing.com</td>
+                            <td>565-676-888-0</td>
+                            <td>Inactive</td>
+                            <td>
+                                <span class="tag">Wholesaler</span>
+                                <span class="tag">Low Budget</span>
+                            </td>
+                            <td>2023/04/01</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Jennifer Acosta</td>
+                            <td>India</td>
+                            <td>company@Testing.com</td>
+                            <td>222-312-222-9</td>
+                            <td>New</td>
+                            <td>
+                                <span class="tag">Reseller</span>
+                                <span class="tag">High Budget</span>
+                            </td>
+                            <td>2023/02/01</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Cara Stevens</td>
+                            <td>United States</td>
+                            <td>company@Testing.com</td>
+                            <td>772-009-988-1</td>
+                            <td>Active</td>
+                            <td>
+                                <span class="tag">Wholesaler</span>
+                                <span class="tag">High Budget</span>
+                            </td>
+                            <td>2023/12/06</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Hermione Butler</td>
+                            <td>Brasil</td>
+                            <td>company@Testing.com</td>
+                            <td>223-332-434-2</td>
+                            <td>Active</td>
+                            <td>
+                                <span class="tag">Wholesaler</span>
+                            </td>
+                            <td>2023/03/21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <button>Previous</button>
+                <span>1</span>
+                <button>Next</button>
+            </div>
+        </div>
+    </div>
+</div>
